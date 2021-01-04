@@ -1,0 +1,17 @@
+{
+  "name": "yireo/shopware6-example-dealers-cli",
+  "description": "Shopware 6 example dealers - CLI plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Yireo\\ExampleDealersCli\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Yireo\\ExampleDealersCli\\YireoExampleDealersCli",
+    "label": {
+      "en-GB": "Shopware 6 example dealers - CLI plugin"
+    }
+  }
+}
