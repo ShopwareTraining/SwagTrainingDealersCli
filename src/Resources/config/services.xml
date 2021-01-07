@@ -5,6 +5,24 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="Yireo\ExampleDealersCli\Console\Command\ListCommand">
+            <argument type="service" id="dealer_entity.repository"/>
+            <tag name="console.command"/>
+        </service>
 
+        <service id="Yireo\ExampleDealersCli\Console\Command\CreateCommand">
+            <argument type="service" id="dealer_entity.repository"/>
+            <tag name="console.command"/>
+        </service>
+
+        <service id="Yireo\ExampleDealersCli\Console\Command\UpdateCommand">
+            <argument type="service" id="dealer_entity.repository"/>
+            <tag name="console.command"/>
+        </service>
+
+        <service id="Yireo\ExampleDealersCli\Console\Command\DeleteCommand">
+            <argument type="service" id="dealer_entity.repository"/>
+            <tag name="console.command"/>
+        </service>
     </services>
 </container>
