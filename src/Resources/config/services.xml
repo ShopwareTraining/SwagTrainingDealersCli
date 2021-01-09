@@ -6,22 +6,22 @@
 
     <services>
         <service id="Yireo\ExampleDealersCli\Console\Command\ListCommand">
-            <argument type="service" id="dealer_entity.repository"/>
+            <argument type="service" id="dealer.repository"/>
             <tag name="console.command"/>
         </service>
 
         <service id="Yireo\ExampleDealersCli\Console\Command\CreateCommand">
-            <argument type="service" id="dealer_entity.repository"/>
+            <argument type="service" id="dealer.repository"/>
             <tag name="console.command"/>
         </service>
 
         <service id="Yireo\ExampleDealersCli\Console\Command\UpdateCommand">
-            <argument type="service" id="dealer_entity.repository"/>
+            <argument type="service" id="dealer.repository"/>
             <tag name="console.command"/>
         </service>
 
         <service id="Yireo\ExampleDealersCli\Console\Command\DeleteCommand">
-            <argument type="service" id="dealer_entity.repository"/>
+            <argument type="service" id="dealer.repository"/>
             <tag name="console.command"/>
         </service>
     </services>
