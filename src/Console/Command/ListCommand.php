@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleDealersCli\Console\Command;
+namespace SwagTraining\DealersCli\Console\Command;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
@@ -13,7 +13,7 @@ class ListCommand extends AbstractCommand
 {
     protected function configure()
     {
-        $this->setName('example_dealers:list')
+        $this->setName('training:dealers:list')
             ->setDescription('Show a listing of all example dealers');
     }
 

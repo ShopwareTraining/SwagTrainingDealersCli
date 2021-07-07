@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleDealersCli\Console\Command;
+namespace SwagTraining\DealersCli\Console\Command;
 
 use InvalidArgumentException;
 use Shopware\Core\Framework\Context;
@@ -17,7 +17,7 @@ abstract class AbstractCommand extends Command
     /**
      * @var EntityRepositoryInterface
      */
-    protected $dealerRepository;
+    protected EntityRepositoryInterface $dealerRepository;
 
     /**
      * CreateCommand constructor.

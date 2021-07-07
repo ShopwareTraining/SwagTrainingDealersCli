@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleDealersCli\Console\Command;
+namespace SwagTraining\DealersCli\Console\Command;
 
 use Shopware\Core\Framework\Context;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,7 +14,7 @@ class DeleteCommand extends AbstractCommand
      */
     protected function configure()
     {
-        $this->setName('example_dealers:delete')
+        $this->setName('training:dealers:delete')
             ->setDescription('Delete an existing example dealer')
             ->addOption('id', null, InputOption::VALUE_OPTIONAL, 'Id');
     }

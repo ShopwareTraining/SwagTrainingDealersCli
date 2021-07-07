@@ -1,15 +1,15 @@
 {
-  "name": "yireo/shopware6-example-dealers-cli",
+  "name": "shopware-training/dealers-cli",
   "description": "Shopware 6 example dealers - CLI plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Yireo\\ExampleDealersCli\\": "src/"
+      "SwagTraining\\DealersCli\\": "src/"
     }
   },
   "extra": {
-    "shopware-plugin-class": "Yireo\\ExampleDealersCli\\YireoExampleDealersCli",
+    "shopware-plugin-class": "SwagTraining\\DealersCli\\SwagTrainingDealersCli",
     "label": {
       "en-GB": "Shopware 6 example dealers - CLI plugin"
     }
