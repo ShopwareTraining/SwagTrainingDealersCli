@@ -22,7 +22,7 @@ class ListCommand extends AbstractCommand
      * @param OutputInterface $output
      * @return int|void
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $table = new Table($output);
         $table->setHeaders(['ID', 'Name', 'Description', 'Address']);
@@ -37,6 +37,7 @@ class ListCommand extends AbstractCommand
         }
 
         $table->render();
+        return 0;
     }
 
     /**

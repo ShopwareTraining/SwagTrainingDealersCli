@@ -26,7 +26,7 @@ class CreateCommand extends AbstractCommand
      * @param OutputInterface $output
      * @return int|void
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $data = [];
         $data['name'] = $this->getValueFromInput($input, $output, 'name');
@@ -37,5 +37,6 @@ class CreateCommand extends AbstractCommand
         $this->dealerRepository->upsert([$data], $context);
 
         $output->writeln('Create new dealer record');
+        return 0;
     }
 }

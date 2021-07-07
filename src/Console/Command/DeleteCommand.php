@@ -24,9 +24,10 @@ class DeleteCommand extends AbstractCommand
      * @param OutputInterface $output
      * @return int|void
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $id = $this->getIdFromInput($input, $output);
         $this->dealerRepository->delete([['id' => $id]], Context::createDefaultContext());
+        return 0;
     }
 }

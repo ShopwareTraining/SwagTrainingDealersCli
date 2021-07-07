@@ -27,7 +27,7 @@ class UpdateCommand extends AbstractCommand
      * @param OutputInterface $output
      * @return int|void
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $data = [];
         $data['id'] = $this->getIdFromInput($input, $output);
@@ -39,5 +39,6 @@ class UpdateCommand extends AbstractCommand
         $this->dealerRepository->upsert([$data], $context);
 
         $output->writeln('Updated existing dealer record');
+        return 0;
     }
 }
