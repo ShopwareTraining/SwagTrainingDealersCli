@@ -1,5 +1,5 @@
 {
-  "name": "shopware-training/dealers-cli",
+  "name": "swag-training/dealers-cli",
   "description": "Shopware 6 example dealers - CLI plugin",
   "type": "shopware-platform-plugin",
   "license": "MIT",
